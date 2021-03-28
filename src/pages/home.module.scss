@@ -1,1 +1,51 @@
-// TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.posts {
+  max-width: 720px;
+  margin: 5rem auto 0;
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--body);
+    }
+
+    > h1 {
+      margin-bottom: 1rem;
+    }
+
+    > span {
+      color: var(--body);
+    }
+  }
+}
+
+.details {
+  margin-top: 1.5rem;
+  display: flex;
+
+  div {
+    color: var(--body);
+    display: flex;
+    align-items: center;
+
+    time {
+      margin-left: 0.5rem;
+    }
+
+    span {
+      margin-left: 0.5rem;
+    }
+
+    & + div {
+      margin-left: 2rem;
+    }
+  }
+}
